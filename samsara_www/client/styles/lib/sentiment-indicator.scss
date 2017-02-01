@@ -1,0 +1,82 @@
+.sentiment-indicator {
+
+  &.label-left .label { padding-right: 5px; }
+  &.label-right .label { padding-left: 5px; }
+
+  .icon {
+    @include size(12px);
+    border: $border-thin;
+    background-color: $carma-white;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: -2px;
+    margin-right: 5px;
+  }
+
+  &.mini {
+    .icon {
+      @include size(7px);
+      border-radius: 4px;
+      margin-bottom: 1px;
+      margin-right: 3px;
+    }
+  }
+
+  &.negative {
+    .icon.negative {
+      background-color: $carma-sentiment-negative;
+      border-color: shade($carma-sentiment-negative, 10%);
+    }
+  }
+
+  &.somewhat_negative {
+    .icon.somewhat_negative {
+      background-color: $carma-sentiment-somewhat-negative;
+      border-color: shade($carma-sentiment-somewhat-negative, 10%);
+    }
+  }
+
+  &.neutral {
+    .icon.neutral {
+      background-color: $carma-sentiment-neutral;
+      border-color: shade($carma-sentiment-neutral, 10%);
+    }
+  }
+
+  &.somewhat_positive {
+    .icon.somewhat_positive {
+      background-color: $carma-sentiment-somewhat-positive;
+      border-color: shade($carma-sentiment-somewhat-positive, 10%);
+    }
+  }
+
+  &.positive {
+    .icon.positive {
+      background-color: $carma-sentiment-positive;
+      border-color: shade($carma-sentiment-positive, 10%);
+    }
+  }
+
+}
+
+
+
+
+// @each $sentiment, $sentiment-color in $sentiment-colors {
+//   .#{$sentiment}-sentiment {
+//     background-color: $sentiment-color;
+//
+//     &.impressions-none {
+//       background-color: transparent;
+//       border: 1px solid $sentiment-color;
+//     }
+//   }
+//
+//   .switch.sentiments {
+//     input[value="#{$sentiment}"]:checked {
+//       + .switch_background {
+//         background: $sentiment-color;
+//       }
+//     }
+//   }
+// }

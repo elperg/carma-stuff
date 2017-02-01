@@ -1,0 +1,88 @@
+.profile {
+
+  margin-top: $margin;
+
+  h2 {
+    border-bottom: $border-thick;
+    padding-bottom: 3px;
+  }
+
+  input[type=text] {
+    @include text-field;
+  }
+
+  .user-project {
+    border-top: $border-thin-light;
+    padding-top: $margin;
+    margin-bottom: $margin;
+
+    &:first-child { border-top: none; padding-top: 0; }
+
+    h4, .checkbox-group {
+      margin-bottom: $margin/2;
+    }
+
+  }
+
+  .add-time {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: $carma-marine;
+
+    .icon-add {
+      position: relative;
+      top: -2px;
+    }
+
+    path {
+      fill: $carma-marine;
+    }
+
+    &:hover {
+      color: $carma-orange;
+      path {
+        fill: $carma-orange;
+      }
+    }
+  }
+
+  .time-pickers {
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    max-width: 100%;
+    margin-top: $margin/2;
+  }
+
+  .time-picker {
+    position: relative;
+    padding-right: 30px;
+    margin-right: $margin;
+    margin-bottom: $margin;
+
+    .remove {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      cursor: pointer;
+
+      .icon-close {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        path {
+          fill: $carma-danger;
+        }
+      }
+
+      &:hover {
+        .icon-close {
+          path {
+            fill: $carma-orange;
+          }
+        }
+      }
+
+    }
+  }
+}

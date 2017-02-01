@@ -1,0 +1,67 @@
+.industry-experts{
+
+ #sub-nav {
+    background-color: #ec9148;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex: 1;
+    height: 3.5rem;
+    order: 2;
+    width: 100%;
+    text-transform: uppercase;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+.specialty-tags{
+  a{ color: $carma-white; }
+  a:hover{ color: $carma-marine; }
+}
+    .label {
+       color: #ffd9bb;
+       margin: 0 1rem;
+   }
+    li {
+       float: left;
+       font-size: 0.9em;
+
+        padding: 0.7em 1em;
+
+       a {
+    color: $carma-white;
+    opacity: 0.8;
+}
+a:hover {
+    color: $carma-marine;
+    fill: $carma-marine;
+}
+     }
+  }
+
+  .expert-hero {
+    background-image: url(https://www.carma.com/app/uploads/2015/06/Unknown.jpg);
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    height: 30rem;
+}
+
+.expert-section-content{
+  margin:12rem 0 0 0;
+}
+
+}

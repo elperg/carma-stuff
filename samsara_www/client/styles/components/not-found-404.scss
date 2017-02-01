@@ -1,0 +1,14 @@
+.not-found-404 {
+  text-align: center;
+  margin: 0 auto;
+
+  .logo {
+    @include size(100px);
+    margin: 3rem auto;
+    display: block;
+    svg {
+      fill: $carma-orange;
+    }
+  }
+
+}

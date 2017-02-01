@@ -1,0 +1,55 @@
+.article-detail-app {
+  width: 100%;
+
+  .article-detail-body {
+    margin-top: $margin;
+
+    .date {
+      @include meta-accent;
+    }
+  }
+
+  .article-detail-metadata {
+    margin-top: $margin;
+
+    .outlet-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 0;
+      color: $carma-black;
+
+      .outlet-section {
+        color: $carma-gray;
+        font-weight: 300;
+      }
+    }
+
+    .meta-table {
+      font-size: $base-font-size;
+      margin: $margin 0;
+
+      th {
+        padding: 0 $margin $margin/4 0;
+        color: $carma-gray;
+        text-align: left;
+        font-weight: normal;
+      }
+
+      td {
+        padding-bottom: $margin/4;
+        color: $carma-black;
+      }
+    }
+
+    .meta-block {
+      margin-bottom: $margin;
+
+      h4 {
+        @include meta-accent;
+        margin: 0;
+        font-size: $base-font-size;
+      }
+    }
+
+  }
+}

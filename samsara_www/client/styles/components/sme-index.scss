@@ -1,0 +1,50 @@
+.industry-experts{
+
+  .expert-hero {
+    background-image: url(https://www.carma.com/app/uploads/2015/06/Unknown.jpg);
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    height: 30rem;
+    color:$carma-white;
+    margin: 3rem 0 0;
+
+      .article-links-list {
+        font-size: 1.2em;
+        margin: 0% 0 10% 22%;
+        width: 68%;
+        li{
+          float: left;
+          font-size: 1.3em;
+          margin: 0 1% 0 0;
+          width: 28%;
+        }
+      }
+}
+.expert-bio{
+    margin:33rem 0 0 0;
+    background-color: #f6f6f6;
+      color: #868686;
+      font-size: 1.6em;
+      padding: 2% 15%;
+}
+
+.expert-section-content{
+  margin:4rem 0 0 0;
+
+}
+
+}
+
+.category-view{
+  .expert-hero {
+    background-image: url(https://carmaexperts.wpengine.com/wp-content/uploads/2016/07/finance-LP.jpg);
+}
+
+}

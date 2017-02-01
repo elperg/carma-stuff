@@ -1,0 +1,74 @@
+.tabs {
+  @include clearfix;
+
+
+  .tab {
+    &_container {
+      display: inline;
+    }
+
+    &_link {
+      color: $carma-gray;
+      display: inline-block;
+      margin-right: 2em;
+      cursor: pointer;
+
+      &.is-active {
+        color: $carma-marine;
+
+        .tab_title {
+          border-bottom-color: $carma-marine;
+        }
+
+        line {
+          stroke: $carma-orange;
+        }
+      }
+    }
+
+    &_title {
+      border-bottom: 3px solid transparent;
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: 400;
+      padding-bottom: $margin / 2;
+      text-transform: uppercase;
+    }
+
+    &_indicator {
+      //@include count-indicator;
+      background-color: $carma-gray;
+      padding: 4px;
+
+      &.indicator-on {
+        background-color: $carma-marine;
+      }
+
+      &.indicator-mixed {
+        background: linear-gradient(-45deg, $carma-marine 50%, $carma-gray 50%);
+      }
+    }
+
+    &_separator {
+      margin-right: $margin * 1.5;
+    }
+
+    &_content {
+      border-top: $border-thin-light;
+      display: none;
+      float: left;
+      width: 100%;
+      padding-top: 1em;
+
+      &.is-active {
+        display: block;
+      }
+
+      form {
+        max-width: 40em;
+        padding: $margin 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.collection-header {
+  position: relative;
+  margin-top: $margin;
+  .name {
+    margin-bottom: 0.2rem;
+  }
+
+  .add-collection {
+    position: absolute;
+    top: $margin/3;
+    right: 0;
+  }
+}

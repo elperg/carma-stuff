@@ -1,0 +1,25 @@
+.article-locator {
+  width: 54px;
+  height: 72px;
+  display: block;
+  overflow: hidden;
+  background: url(/img/newspaper.png) no-repeat;
+  background-size: 54px 72px;
+
+  & > span {
+    width: 9px;
+    height: 12px;
+    background-color: rgba($carma-faint-gray, 0.8);
+    display: block;
+    float: left;
+
+    &:nth-last-of-type(6n) {
+      clear: left;
+    }
+
+    &.on {
+      background-color: rgba($carma-orange, 0.8);
+    }
+
+  }
+}

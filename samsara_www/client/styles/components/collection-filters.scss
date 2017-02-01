@@ -1,0 +1,49 @@
+@mixin collection-filters-caret($color) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      border-left: 6px solid $color;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      border-left: 3px solid $carma-offwhite;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+    }
+}
+
+
+.collection-filters {
+
+  h3 {
+    margin-bottom: $margin/2;
+  }
+
+  .project-collections {
+    margin-top: $margin * 1.5;
+  }
+
+  .collection-listing li {
+    padding-left: $margin/2;
+    position: relative;
+
+    &:hover {
+      @include collection-filters-caret($carma-gray);
+    }
+
+    &.selected {
+      @include collection-filters-caret($carma-black);
+    }
+  }
+
+
+
+}

@@ -1,0 +1,55 @@
+.article-list-app .toolbar,
+.collections-app .toolbar,
+.article-detail-app .toolbar {
+  border-bottom: $border-thick;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $margin;
+
+  svg {
+    position: relative;
+    bottom: 2px;
+  }
+
+  .actions {
+    padding-left: 4px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .selectAll {
+    @include checkbox;
+  }
+
+  .collection-dropdown, .export-dropdown {
+    margin-left: $margin/2;
+  }
+
+  .dropdown {
+    svg {
+      path {
+        fill: $carma-marine;
+      }
+    }
+
+    &.disabled {
+      color: $carma-gray;
+      svg {
+        path {
+          fill: $carma-gray;
+        }
+      }
+    }
+  }
+
+}
+
+.footer-pagination {
+  text-align: right;
+}

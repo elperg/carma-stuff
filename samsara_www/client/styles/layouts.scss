@@ -1,0 +1,261 @@
+//========================
+//
+//    ROOT LAYOUT
+//
+//========================
+
+// Define our column width
+$colWidth: 23rem;
+
+
+#main {
+  @include outer-container;
+  @include display(flex);
+  @include justify-content(space-between);
+  min-width: 1200px;
+}
+
+
+// Set a vertical flex on the reactroot el
+#mount { display: flex; flex-grow: 1;  min-height: 100%; }
+#mount > div {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 100%;
+
+  & > nav {
+    flex: 0 0 4rem;
+  }
+
+  & > main {
+    flex: 1 1 auto;
+  }
+
+  & > footer {
+    flex: 0 0 4rem;
+  }
+}
+
+//========================
+//
+//    2-COL, (1:4)
+//
+//========================
+
+// Note: Things exist in precendence, "primary," "secondary," etc
+// Don't call columns things like "left" or "sidebar," I will find you
+// Also, ratios like "1:4" or "1:3:1" help, read them like "1 to 4" or "1 to 3 to 1"
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+
+.flex-1to4 {
+  display: flex;
+  flex-grow: 1;
+
+
+  @include media($medium-screen) {
+    .primary-content {
+
+    }
+  }
+
+  @include media($large-screen) {
+
+    .primary-content {
+      flex: 1;
+      order: 2;
+      align-self: flex-start;
+      margin-left: $margin;
+    }
+
+    .secondary-content {
+      flex: 0 0 $colWidth;
+      order: 1;
+    }
+  }
+
+}
+
+
+
+.flex-4to1 {
+  display: flex;
+  flex-grow: 1;
+
+
+  @include media($medium-screen) {
+    .primary-content {
+
+    }
+  }
+
+  @include media($large-screen) {
+
+    .primary-content {
+      flex: 1;
+      order: 1;
+      align-self: flex-start;
+      margin-right: $margin;
+    }
+
+    .secondary-content {
+      flex: 0 0 $colWidth;
+      order: 2;
+    }
+  }
+
+}
+
+
+
+
+//========================
+//
+//    2-COL, (2:1)
+//
+//========================
+
+// Note: Things exist in precendence, "primary," "secondary," etc
+// Don't call columns things like "left" or "sidebar," I will find you
+// Also, ratios like "1:4" or "1:3:1" help, read them like "1 to 4" or "1 to 3 to 1"
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+
+.flex-2to1 {
+  display: flex;
+  flex-grow: 1;
+  @include justify-content(space-between);
+
+
+  @include media($medium-screen) {
+    .primary-content {
+
+    }
+  }
+
+  @include media($large-screen) {
+
+    .primary-content {
+      flex: 0 0 66%;
+      order: 1;
+    }
+
+    .secondary-content {
+      flex: 0 0 33%;
+      order: 2;
+    }
+  }
+
+}
+
+
+
+
+
+//========================
+//
+//    2-COL, (1:1)
+//
+//========================
+
+
+.flex-1to1 {
+  display: flex;
+  flex-grow: 1;
+  @include justify-content(space-between);
+
+
+  @include media($medium-screen) {
+    .balanced-content {
+
+    }
+  }
+
+  @include media($large-screen) {
+    .balanced-content {
+      flex: 0 0 49%;
+    }
+  }
+
+}
+
+
+
+//========================
+//
+//    3-COL, (1:1:1)
+//
+//========================
+
+
+.flex-1to1to1 {
+  display: flex;
+  flex-grow: 1;
+  @include justify-content(space-between);
+
+
+  @include media($medium-screen) {
+    .balanced-content {
+
+    }
+  }
+
+  @include media($large-screen) {
+
+    .balanced-content {
+      flex: 0 0 33%;
+
+    }
+
+  }
+
+}
+
+
+
+
+//========================
+//
+//    5-COL, (1:3:6:3)
+//
+//========================
+
+.flex-1to3to6to2 {
+  display: flex;
+  flex-grow: 1;
+  @include justify-content(space-between);
+
+  @include media($medium-screen) {
+    .primary-content {
+    }
+  }
+
+  @include media($large-screen) {
+
+    .primary-content {
+      flex: 6;
+      order: 3;
+      align-self: flex-start;
+    }
+
+    .secondary-content {
+      flex: 3;
+      order: 2;
+      align-self: flex-start;
+    }
+
+    .tertiary-content {
+      flex: 2;
+      order: 4;
+      align-self: flex-start;
+    }
+
+    .quarternary-content {
+      flex: 1;
+      flex-basis: 30px;
+      order: 1;
+      align-self: flex-start;
+    }
+
+  }
+
+}

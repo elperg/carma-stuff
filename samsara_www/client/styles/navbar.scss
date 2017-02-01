@@ -1,0 +1,195 @@
+@mixin navbar-nav($width) {
+  flex: 0 0 $width;
+
+  .dropdown__label {
+    max-width: ($width - 30px);
+  }
+}
+
+.navbar {
+  @include position(fixed, 0 0 null 0);
+  @include size(100%, $navbar-height);
+  background-color: $navbar-background;
+  z-index: $navbar-z-index;
+
+  @include media($primary-nav-screen) {
+    position: relative;
+  }
+
+  + main {
+    margin-top: $navbar-height;
+
+    @include media($primary-nav-screen) {
+      margin-top: 0;
+    }
+  }
+
+  &__header {
+    @include position(absolute);
+    @include size(100%, $navbar-height);
+    background-color: $navbar-background;
+    padding: 0 $gutter;
+    z-index: 2;
+
+    @include media($navbar-screen) {
+      @include container-with-margin;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+
+  &__mobile {
+    @include position(absolute, 100% 0 null 0);
+    background-color: rgba($black, 0.9);
+    padding: $small-spacing;
+    transform: translateY(calc(-150%));
+    transition: transform ease-in-out $base-transition-duration;
+    z-index: 1;
+
+    @include media($medium-screen) {
+      display: none;
+    }
+
+    .navbar--open & {
+      transform: translateY(0);
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include media($navbar-screen) {
+      display: flex;
+    }
+
+    &--logo {
+      @include navbar-nav(30px);
+      display: block;
+
+      .fixed-logo {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url(/images/carma_logo-header28x30.png) no-repeat 0 0;
+      }
+    }
+
+    &--project {
+      flex: 1;
+      justify-content: center;
+
+      .navbar__link--filters .menu {
+        min-width: 250px;
+      }
+    }
+
+    &--org,
+    &--user {
+      @include navbar-nav(150px);
+
+      @include media(new-breakpoint(min-width 950px 12)) {
+        @include navbar-nav(250px);
+      }
+
+      @include media($large-screen) {
+        @include navbar-nav(310px);
+      }
+    }
+
+    &--user {
+      justify-content: flex-end;
+    }
+  }
+
+  &__toggle {
+    @include position(absolute, 1.3rem null null $gutter);
+
+    @include media($navbar-screen) {
+      display: none;
+    }
+  }
+
+  &__dropdown {
+    height: $navbar-height;
+  }
+
+  &__heading {
+    border-top: 1px solid $black;
+    color: $light-gray;
+    font-size: 0.86em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 3;
+    margin: 0;
+    padding: 0 0.85rem;
+    text-transform: uppercase;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+
+  &__list {
+    margin-bottom: $base-spacing;
+  }
+
+  &__link {
+    color: $carma-light-gray;
+    display: block;
+    font-size: 1.067rem;
+    font-weight: normal;
+    line-height: 2.5;
+    padding: 0 $small-spacing;
+    position: relative;
+
+    @include media($navbar-screen) {
+      display: inline-block;
+      height: $navbar-height;
+      line-height: $navbar-height;
+    }
+
+    &:hover,
+    &:focus,
+    .overviews-view &--overview,
+    .polls-view &--polls,
+    .articles-view &--articles,
+    .collections-view &--collections,
+    .social-view &--social,
+    .my_carma-view &--my_carma,
+    .industry_experts-view &--experts,
+    .analytics-view &--charts {
+      color: $white;
+    }
+
+    &.dropdown__toggle {
+      padding-right: 1.2em;
+    }
+
+    .menu & {
+      display: block;
+      height: auto;
+      line-height: 3em;
+    }
+
+    .menu li:last-of-type & {
+      padding-bottom: $small-spacing;
+    }
+
+    &--logo {
+      @include size($navbar-logo-size);
+      display: block;
+      margin: 0.8rem auto 0;
+
+      @include media($navbar-screen) {
+        margin: 0.8rem 0 0;
+      }
+
+      > .carma-logo {
+        @include size($navbar-logo-size);
+        display: block;
+        fill: $carma-logo-color;
+      }
+    }
+  }
+}

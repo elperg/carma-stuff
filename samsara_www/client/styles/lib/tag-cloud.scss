@@ -1,0 +1,55 @@
+.tag-cloud {
+
+  .tag {
+    background-color: $carma-white;
+    border: 1px solid $carma-gray;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 0.25em;
+    max-width: 90%;
+    overflow: hidden;
+    padding: 0.3em 0.75em;
+    text-overflow: ellipsis;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+//     .timeline_tags & {
+//       background-color: $carma-gray;
+//       border: none;
+//     }
+
+    &.tag-products {
+      border-color: $carma-tags-products;
+      color: $carma-tags-products;
+    }
+
+    &.tag-competitors {
+      border-color: $carma-tags-competitors;
+      color: $carma-tags-competitors;
+    }
+
+    &.tag-organizations {
+      border-color: $carma-tags-organizations;
+      color: $carma-tags-organizations;
+    }
+
+    &.tag-people {
+      border-color: $carma-tags-people;
+      color: $carma-tags-people;
+    }
+
+    &.tag-places {
+      border-color: $carma-tags-places;
+      color: $carma-tags-places;
+    }
+
+    &.tag-custom {
+      border-color: $carma-tags-custom;
+      color: $carma-tags-custom;
+    }
+
+  }
+}

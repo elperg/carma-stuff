@@ -1,0 +1,169 @@
+
+//========================
+//
+//    TYPOGRAPHY
+//
+//========================
+
+$sans-serif: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+$serif: Georgia, "Times New Roman", Times, serif;
+$monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+$base-font-size: 0.875rem;
+$small-font-size: 0.875rem;  // 87.5% of $base-font-size
+
+$h1-font-size: 2.5em;
+$h2-font-size: 2em;
+$h3-font-size: 1.5em;
+$h4-font-size: 1.3em;
+$h5-font-size: 1em;
+$h6-font-size: 0.86em;
+
+$base-line-height: 1.7;
+$heading-line-height: 1.2;
+
+$margin: 1.5rem;
+
+
+//========================
+//
+//    COLOR
+//
+//========================
+
+$carma-orange: #ec9148;
+$carma-marine: #2985a3;
+$carma-merlot: #e097c5;
+$carma-hi-liter-yellow: #fffaba;
+$carma-danger: #E04728;
+
+$carma-very-black: #2c2c2c; // ~ 96% K
+$carma-black: #413d3b;      // ~ 84% K
+$carma-gray: #807874;       // ~ 52% K
+$carma-light-gray: #b0b6b8;
+$carma-faint-gray: #e7e7e8; // ~ 11% K
+$carma-offwhite: #f5f5f5;   // ~  2% K
+$carma-white: #fff;         //    0% K
+
+
+// SENTIMENT
+//
+// NOTE: These are not colorblind-accessible (RvG), should use different hues
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+$carma-sentiment-negative: #c13445;
+$carma-sentiment-somewhat-negative: #e8acb4;
+$carma-sentiment-neutral: #9c9c9c;
+$carma-sentiment-somewhat-positive: #9fd190;
+$carma-sentiment-positive: #359c16;
+
+
+// TAGS
+//
+// NOTE: These alternate, and are presented in their original color/order
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+$carma-tags-products: #80bfc5;
+$carma-tags-competitors: #d77083;
+$carma-tags-organizations: #80a2c5;
+$carma-tags-people: #e097c5;
+$carma-tags-places: #80bfc5;
+$carma-tags-custom: #e097c5;
+
+    //    ORIGINALS PROVIDED FOR CONTEXT
+    //       $tag-colors: (
+    //         competitors: #d77083,
+    //         custom: #b0b6b8,
+    //         organizations: #80a2c5,
+    //         people: #e097c5,
+    //         places: #e4ce7f,
+    //         products: #80bfc5
+    //       );
+
+
+
+
+// MEDIA
+//
+// NOTE: These old colors aren't really ideal.  They should be grouped by
+// Hue and differentiated by Saturation/Brightness in 3 categories:
+//  BROADCAST: TV & Radio
+//  ONLINE: Website & Social
+//  PRINT: Magazine & Newspaper
+// The reason is some clients will subscribe to categories of media,
+// but not necessarily all, so a client may have TV & Radio, but not
+// Magazine & Newspaper.  Thank you for listening. :-)
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+
+// PRINT (Most Common)
+$carma-media-magazine: #30b2d5;
+$carma-media-newspaper: #84c6dA;
+
+// ONLINE
+$carma-media-website: #f0b181;
+$carma-media-social: #84c6da;
+
+// BROADCAST (Least Common)
+$carma-media-tv: #b2dcc0;
+$carma-media-radio: #65c083;
+
+
+
+
+
+
+//========================
+//
+//    BORDERS & SHADOWS
+//
+//========================
+
+$border-thin: 1px solid $carma-gray;
+
+// be careful about using this against $carma-offwhite
+$border-thin-light: 1px solid $carma-faint-gray;
+
+// good for heading rules
+$border-thick: 3px solid $carma-gray;
+
+
+// NOTE: legacy, not sure if I want this, too, is it different enough from $border-thick?
+// - Michael Ferron, 4 Aug 2016
+// $section-border: 4px solid #7f7777;
+
+
+$modal-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.2);
+$thumbnail-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.1), 0 0 2px rgba(1, 1, 1, 0.1);
+$dropdown-box-shadow:  0 1px 2px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.2);
+
+
+
+//========================
+//
+//    TRANSITION LENGTHS
+//
+//========================
+
+$short-transition-duration: 100ms;
+
+// NOTE: 800ms seems like an eternity, even for moving larger elements,
+// I'd consider shortening this to 500-700 (keep it snappy!)
+// Michael Ferron <michael.ferron@carma.com>, 4 Aug 2016
+$long-transition-duration: 800ms;
+
+
+
+
+
+//========================
+//
+//    MEDIA QUERIES
+//
+//========================
+
+$medium: 768px;
+$large: 1200px;
+$extra-large: 1440px;
+$medium-screen: new-breakpoint(min-width $medium 12);
+$medium-screen-down: new-breakpoint(max-width $medium 12);
+$large-screen: new-breakpoint(min-width $large 12);
+$extra-large-screen: new-breakpoint(min-width $extra-large);

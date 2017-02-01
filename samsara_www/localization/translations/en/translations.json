@@ -1,0 +1,1652 @@
+{
+  "application": {
+    "title": "CARMA Insight",
+    "not_found": "The page you’re looking for can’t be found."
+  },
+  "activerecord": {
+    "errors": {
+      "messages": {
+        "must_be_in_the_past": "must be in the past",
+        "scoped_to_project": "must belong to same project",
+        "at_max_active_users_limit": "Already at users capacity, cannot add any more",
+        "time_cant_be_within_range": "Digest times cannot be within less of 30 minutes each",
+        "invalid_value": "invalid value",
+        "too_many": "are too many, maximum is %{count}",
+        "changed": "can't be changed"
+      }
+    }
+  },
+  "analytics": {
+    "charts": {
+      "not_available": "Feature not available"
+    },
+    "date_toggle": {
+      "this_week": "This week",
+      "last_week": "Last week",
+      "last_7_days": "Last 7 Days",
+      "this_month": "This month",
+      "last_month": "Last month",
+      "last_30_days": "Last 30 days",
+      "last_3_months": "Last 3 months",
+      "all_time": "All time"
+    },
+    "impressions": {
+      "description": "Number of impressions by media type over time",
+      "empty": "No impression data yet",
+      "title": "Impressions"
+    },
+    "show": {
+      "title": "Charts"
+    },
+    "labels": {
+      "articles": "Articles",
+      "average": "Average",
+      "broadcast": "Broadcast",
+      "competitors": "Competitors",
+      "country": "Country",
+      "custom": "Custom",
+      "date": "Date",
+      "impressions": "Impressions",
+      "language": "Language",
+      "magazine": "Magazine",
+      "negative": "Negative",
+      "neutral": "Neutral",
+      "newspaper": "Newspaper",
+      "none": "None",
+      "online": "Online",
+      "organizations": "Organizations",
+      "other": "Other",
+      "outlet": "Outlet",
+      "people": "People",
+      "places": "Places",
+      "positive": "Positive",
+      "print": "Print",
+      "products": "Products",
+      "radio": "Radio",
+      "social": "Social",
+      "somewhat_negative": "Somewhat Negative",
+      "somewhat_positive": "Somewhat Positive",
+      "tag": "Tag",
+      "total": "Total",
+      "tv": "TV",
+      "website": "Website"
+    },
+    "languages": {
+      "description": "Number of articles by language over time",
+      "empty": "No language data yet",
+      "title": "Languages"
+    },
+    "media_types": {
+      "description": "Number of articles by media type over time",
+      "empty": "No article data yet",
+      "title": "Media Types"
+    },
+    "outlets": {
+      "empty": "No outlet data yet",
+      "title": "Outlets"
+    },
+    "regional_engagement": {
+      "description": "Total impressions by country",
+      "empty": "No engagement data yet",
+      "title": "Regional Engagement"
+    },
+    "regional_sentiments": {
+      "description": "Average sentiment by country",
+      "empty": "No sentiment data yet",
+      "title": "Regional Sentiment"
+    },
+    "sentiments": {
+      "description": "Number of articles by sentiment and total articles over time",
+      "empty": "No sentiment data yet",
+      "title": "Sentiment"
+    },
+    "tags": {
+      "description": "Number of articles by tag over time",
+      "empty": "No tag data yet",
+      "title": "Tags"
+    },
+    "aves": {
+      "description": "Number of articles by ave over time",
+      "empty": "No ave data yet",
+      "title": "AVE"
+    },
+    "tooltips": {
+      "ave": "%{count} AVE",
+      "ave_plural": "%{count} AVE",
+      "articles": "%{count} article",
+      "articles_plural": "%{count} articles",
+      "impressions": "%{count} impression",
+      "impressions_plural": "%{count} impressions"
+    }
+  },
+  "api": {
+    "errors": {
+      "invalid_params": {
+        "id": "invalid_params",
+        "message": "Invalid parameters. See 'errors' for details."
+      },
+      "param_missing": {
+        "id": "bad_request",
+        "message": "Missing required parameters."
+      },
+      "unauthorized": {
+        "id": "unauthorized",
+        "message": "A correct authentication token was not provided in request."
+      },
+      "forbidden": {
+        "id": "forbidden",
+        "message": "You do not have permission for this resource."
+      }
+    }
+  },
+  "articles": {
+    "add": {
+      "flash": {
+        "success": "Added 1 article to %{collection_name}.",
+        "success_plural": "Added %{count} articles to %{collection_name}."
+      }
+    },
+    "remove": {
+      "flash": {
+        "success": "Removed 1 article from %{collection_name}.",
+        "success_plural": "Removed %{count} articles from %{collection_name}."
+      }
+    },
+    "article": {
+      "alt": "Image: %{headline}"
+    },
+    "article_content": {
+      "alt": "Image: %{headline}",
+      "content": "Full Text",
+      "transcript": "Transcript"
+    },
+    "article_metadata": {
+      "air_time": "Air Time",
+      "ave": "AVE",
+      "byline": "Byline",
+      "circulation": "Circulation",
+      "collections": "Collections",
+      "distribution": "Distribution",
+      "frequency": "Frequency",
+      "impressions": "Impressions",
+      "hits": "Hits",
+      "locator": "Clip Location",
+      "pages": "Page",
+      "pages_plural": "Pages",
+      "program": "Program",
+      "public_url": "Public URL",
+      "bodhi_url": "Edit in Bodhi",
+      "section": "Section",
+      "sentiment": "Sentiment",
+      "size": "Size",
+      "size_with_unit_magazine": "%{count} page",
+      "size_with_unit_magazine_plural": "%{count} pages",
+      "size_with_unit_newspaper": "%{count} cc",
+      "size_with_unit_tv": "%{count}",
+      "size_with_unit_radio": "%{count}",
+      "size_with_unit_website": "",
+      "source": "Source",
+      "station": "Station",
+      "tags": "Tags"
+    },
+    "article_toolbar": {
+      "add": "Add to",
+      "remove": "Remove from",
+      "export": "Export",
+      "pdf": "PDF",
+      "pdf_clippings_only": "PDF Clippings Only"
+    },
+    "articles_toolbar": {
+      "add_all": "Add all %{count} article to",
+      "add_all_plural": "Add all %{count} articles to",
+      "add_selected": "Add %{count} selected article to",
+      "add_selected_plural": "Add %{count} selected articles to",
+      "csv": "CSV (Excel)",
+      "export": "Export",
+      "export_all": "Export all %{count} article to",
+      "export_all_plural": "Export all %{count} articles to",
+      "export_selected": "Export %{count} selected article to",
+      "export_selected_plural": "Export %{count} selected articles to",
+      "filter": "Filter",
+      "print": "Print",
+      "pdf": "PDF",
+      "pdf_clippings_only": "PDF Clippings Only",
+      "docx": "Word Document",
+      "docx_clippings": "Word Clippings",
+      "remove_all": "Remove all %{count} article from",
+      "remove_all_plural": "Remove all %{count} articles from",
+      "remove_selected": "Remove %{count} selected article from",
+      "remove_selected_plural": "Remove %{count} selected articles from",
+      "rima": "CSV (Rima)",
+      "select": "Select",
+      "select_to_add": "Select articles to add",
+      "select_to_do_something": "Select articles to add to collections or export",
+      "selected_count": "%{count} article selected",
+      "selected_count_plural": "%{count} articles selected"
+    },
+    "pagination": "%{start}-%{end} of %{total}",
+    "collection_header": {
+      "article_count": "article",
+      "article_count_plural": "articles"
+    },
+    "labels": {
+      "air_time": "Air Time",
+      "ave_as_currency": "%{ave} AVE",
+      "ave": "%{ave} AVE",
+      "byline": "Byline",
+      "call_sign": "Call Sign",
+      "content": "Full Text",
+      "circulation": "Circulation: %{circulation}",
+      "daily": "Daily",
+      "distribution": "Distribution",
+      "duration": "Duration",
+      "hits": "Keyword Hits",
+      "impressions": "%{impressions} impressions",
+      "language": "Language",
+      "monthly": "Monthly",
+      "origin": "Origin",
+      "outlet_language": "Outlet Language",
+      "pages": "Pages",
+      "program": "Program",
+      "seconds": "seconds",
+      "section": "Section",
+      "sentiment": "Sentiment",
+      "source_link": "View Source",
+      "station": "Station",
+      "primary_summary": "Summary",
+      "tags": "Tags",
+      "word_count": "Word Count",
+      "written_by": "by"
+    },
+    "index": {
+      "no_records": "There are no matching articles.",
+      "query": "Results for: %{query}",
+      "title": "Articles",
+      "translation": "Summary Language:"
+    },
+    "show": {
+      "next": "Newer",
+      "previous": "Older"
+    }
+  },
+  "authenticated": {
+    "flash": {
+      "denied": "You don't have access to that page"
+    }
+  },
+  "collections": {
+    "actions": {
+      "add_article": "Collection",
+      "create": "New Collection",
+      "new": "New Collection\u2026",
+      "edit": "Edit Collection",
+      "update": "Edit %{collectionName}",
+      "delete": "Delete Collection"
+    },
+    "edit": {
+      "title": "Edit Collection"
+    },
+    "form": {
+      "label": "Name of Collection",
+      "description": "Description",
+      "add_article": {
+        "one": "The article \"%{headline}\" will be automatically included in this collection.",
+        "other": "%{count} articles will be automatically included in this collection"
+      },
+      "confirm_delete": "Are you sure you would like to delete “%{collection_name}?”"
+    },
+    "index": {
+      "no_records": "There are no collections in the project.",
+      "title": "Collections",
+      "article_count": "%{count} articles",
+      "article_count_0": "No articles"
+    },
+    "new": {
+      "title": "New Collection"
+    }
+  },
+  "date": {
+    "formats": {
+      "date": "%-d %b %Y",
+      "default": "%-d %b %Y",
+      "full": "%A, %-d %B %Y",
+      "with_weekday": "%a, %-d %b %Y"
+    }
+  },
+  "date_range": {
+    "short": {
+      "month": "%b",
+      "year": "%Y",
+      "same_hours": "%{day} %{month} %{year}",
+      "same_days": "%{day} %{month} %{year}",
+      "same_months": "%{from_day}-%{until_day} %{month} %{year}",
+      "same_years": "%{from_day} %{from_month} - %{until_day} %{until_month} %{year}",
+      "different_components": "%{from_day} %{from_month} %{from_year} - %{until_day} %{until_month} %{until_year}"
+    },
+    "short_us": {
+      "month": "%b",
+      "year": "%Y",
+      "same_hours": "%{month} %{day}, %{year}",
+      "same_days": "%{month} %{day}, %{year}",
+      "same_months": "%{month} %{from_day} - %{until_day}, %{year}",
+      "same_years": "%{from_month} %{from_day} - %{until_month} %{until_day}, %{year}",
+      "different_components": "%{from_month} %{from_day}, %{from_year} - %{until_month} %{until_day}, %{until_year}"
+    }
+  },
+  "digest_mailer": {
+    "digest": {
+      "ave": "AVE",
+      "circulation": "Circulation",
+      "language": "Language",
+      "magazine": "Magazines",
+      "newspaper": "Newspapers",
+      "published": "Published",
+      "radio": "Radio",
+      "subject": "New articles on CARMA Insight",
+      "tv": "TV",
+      "website": "Websites",
+      "intro_help": "Please note that this newsletter informs you of recently updated articles; please make full use of your personal CARMA portal and its many search and analytics functions. All coverage is archived on the <a style=\"%{style}\" href=\"https://insight.carma.com/\">portal</a>.",
+      "intro_report": "Welcome to the CARMA newsletter. You have %{count} new article of which %{similar_story_count} similar story in other media",
+      "intro_report_plural": "Welcome to the CARMA newsletter. You have %{count} new articles of which %{similar_story_count} similar stories in other media",
+      "also_appeared": "Similar Stories:",
+      "manage_digest_settings": "Manage Digest Settings",
+      "footer_help": "If you require our Client Services support please contact your local CARMA office or <a style=\"%{style}\" href=\"mailto:clientservices@carma.com\">clientservices@carma.com</a>."
+    }
+  },
+  "filter": {
+    "actions": {
+      "update": "Update Results",
+      "reset": "Reset Filters"
+    },
+    "any": "Any",
+    "date": "Date",
+    "primaryLanguage": "Article Language",
+    "outletLanguage": "Outlet Language",
+    "tag": "Tag",
+    "location": "Country",
+    "outlet": "Outlet",
+    "media_type": "Media Type",
+    "sentiment": "Sentiment",
+    "page_size": "Articles per page",
+    "past_month": "Past Month",
+    "past_week": "Past Week",
+    "past_day": "Past Day",
+    "range"   : "Range\u2026"
+  },
+  "flash": {
+    "not_found": "Record not found",
+    "missing_template": "URL not correct"
+  },
+  "helpers": {
+    "label": {
+      "user_project": {
+        "email_digest": "Send a daily email digest",
+        "merge_email_digest": "Merge email digest"
+      }
+    },
+    "submit": {
+      "collection": {
+        "destroy": "Delete",
+        "destroy_confirm": "Are you sure you want to delete this collection?"
+      },
+      "user": {
+        "create": "Send Invitation",
+        "update": "Update Member"
+      }
+    }
+  },
+  "invitation_mailer": {
+    "new_invite": {
+      "body": "You've been invited to join CARMA Insight! You can activate your account by either clicking the button below or by following this link: ",
+      "button": "Accept Invitation",
+      "subject": "You're invited to CARMA Insight"
+    }
+  },
+  "layouts": {
+    "organization_navigation": {
+      "projects": "Projects",
+      "settings": "Settings"
+    },
+    "project_navigation": {
+      "articles": "Articles",
+      "charts": "Charts",
+      "collections": "Collections",
+      "overview": "Overview",
+      "social": "Social",
+      "analytics": "Analytics",
+      "automated_charts": "Automated\u00A0Charts",
+      "my_carma": "myCarma",
+      "experts": "Industry Experts"
+    },
+    "user_navigation": {
+      "preferences": "Preferences",
+      "logout": "Logout"
+    },
+    "public_navigation": {
+      "welcome": "Welcome to CARMA Insight"
+    },
+    "sme_navigation": {
+      "automotive": "Automotive",
+      "aviation": "Aviation",
+      "finance": "Finance",
+      "pharma": "Pharma"
+
+    }
+  },
+  "lightbox": {
+    "actions": {
+      "close": "Click to close"
+    }
+  },
+  "mailers": {
+    "greeting": "Hello %{name},",
+    "greeting_with_email": "Hello %{name} <%{email}>,"
+  },
+  "media_subtypes": {
+    "magazine": "Magazine",
+    "newspaper": "Newspaper",
+    "radio": "Radio",
+    "tv": "TV",
+    "website": "Website"
+  },
+  "meta_meter": {
+    "max": "The maximum %{label} of all project articles",
+    "min": "The minimum %{label} of all project articles",
+    "value": "This article's %{label}"
+  },
+  "password_mailer": {
+    "reset": {
+      "body": "We received a request to reset the password for your account. If you didn't make this request, you can ignore this email. If you would like to reset your password, click the button below or follow this link:",
+      "button": "Reset Password",
+      "subject": "Request to change password"
+    }
+  },
+  "organizations": {
+    "index": {
+      "no_records": "No organizations found with that name",
+      "search_input": "Search",
+      "search_placeholder": "Search Organizations",
+      "title": "Organizations"
+    },
+    "organization": {
+      "projects": "Projects",
+      "users": "Users"
+    },
+    "project": {
+      "articles": "Articles",
+      "collections": "Collections",
+      "members": "Members"
+    },
+    "settings": {
+      "title": "Settings"
+    },
+    "show": {
+      "title": "Projects"
+    }
+  },
+  "overviews": {
+    "header": {
+      "new_articles": "New Coverage Today",
+      "newspaper": {
+        "type": "Newspaper",
+        "unit": "Articles today"
+      },
+      "magazine": {
+        "type": "Magazine",
+        "unit": "Articles today"
+      },
+      "tv": {
+        "type": "TV",
+        "unit": "Clips today"
+      },
+      "radio": {
+        "type": "Radio",
+        "unit": "Clips today"
+      },
+      "website": {
+        "type": "Website",
+        "unit": "Articles today"
+      },
+      "sparkline_tip": "Trend over past week",
+      "change_tip": "Percentage change from yesterday"
+    },
+    "featured_article": {
+      "empty": "No Data",
+      "heading": "Featured Article"
+    },
+    "media_type_sentiment": {
+      "empty": "No Sentiment Data",
+      "tip": "%{count} %{sentiment} article",
+      "tip_plural": "%{count} %{sentiment} articles",
+      "heading": "Media Type Sentiment"
+    },
+    "regional_sentiment": {
+      "heading": "Regional Sentiment"
+    },
+    "share_of_voice": {
+      "empty": "No Data",
+      "heading": "Share of Voice"
+    },
+    "show": {
+      "title": "Overview"
+    },
+    "top_articles": {
+      "empty": "No %{type} Data",
+      "heading": "Top Earned Media",
+      "traditional": "Traditional",
+      "online": "Online"
+    },
+    "top_authors": {
+      "empty": "No Author Data",
+      "heading": "Top Authors"
+    },
+    "top_outlets": {
+      "empty": "No Outlet Data",
+      "heading": "Top Outlets"
+    }
+  },
+  "pagination": {
+    "first": "First",
+    "last": "Last",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "passwords": {
+    "actions": {
+      "edit": "Change Password",
+      "reset": "Reset Password",
+      "set": "Set password and sign in to CARMA",
+      "update": "Update Password"
+    },
+    "flash": {
+      "sent": "If your email was found, you will receive an email with instructions soon.",
+      "failed": "Password and confirm password do not match.",
+      "too_short": "Password is too short(at least 8 characters).",
+      "invalid_token": "Invalid token"
+    },
+    "titles": {
+      "reset": "Reset Password",
+      "set": "To complete your registration please confirm your name, timezone, and set your password below.",
+      "welcome": "Welcome."
+    }
+  },
+  "profiles": {
+    "edit": {
+      "profile": "Profile",
+      "title": "Preferences",
+      "update_profile": "Update Profile",
+      "update_digest_settings": "Update Digest Settings",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "change_password": "Change Password",
+      "timezone": "Time Zone",
+      "email_digests": "Email Digests by Project",
+      "send_email_digest" : "Send a Daily Email Digest",
+      "merge_email_digest" : "Merge Email Digest",
+      "add_time": "Add Time"
+    },
+    "password": {
+      "change_password": "Change Password",
+      "old_password": "Old Password",
+      "new_password": "New Password",
+      "requirements": "Your password must contain at least 8 non-whitespace characters",
+      "confirm_new_password": "Confirm New Password",
+      "provide_old_password": "You must provide your old password",
+      "must_contain_8_chars": "Your new password must contain at least 8 characters",
+      "enter_confirmation": "Please enter the new password twice"
+    },
+    "no_records": "You must be a member of a project to receive an email digest.",
+    "update_digest_notifications": {
+      "notice": "Updated email digest delivery preferences"
+    }
+  },
+  "projects": {
+    "index": {
+      "no_records": "There are no projects",
+      "title": "Projects",
+      "search_input": "Search",
+      "search_placeholder": "Search Projects"
+    },
+    "project": {
+      "add_member": "Add New Member",
+      "project_member": "Member",
+      "remove_member": "Remove From Project"
+    }
+  },
+  "regions": {
+    "pan_arab": "Pan-Arab"
+  },
+  "search": {
+    "placeholder": "Search Articles"
+  },
+  "sentiments": {
+    "negative": "Negative",
+    "neutral": "Neutral",
+    "positive": "Positive",
+    "sentiment": "Sentiment",
+    "somewhat_negative": "Somewhat Negative",
+    "somewhat_positive": "Somewhat Positive",
+    "unknown": "Unknown"
+  },
+  "sessions": {
+    "actions": {
+      "log_in": "Log in",
+      "log_out": "Log out"
+    },
+    "flash": {
+      "logged_in": "Logged in",
+      "logged_out": "Logged out",
+      "failed": "Invalid email or password",
+      "organization_failed": "The organization you belong to has been disabled."
+    },
+    "labels": {
+      "email": "Email",
+      "password": "Password",
+      "support": "If you're having difficulties, email Client Services at clientservices@carma.com or by phone +97143564111"
+    },
+    "recover": {
+      "link": "Forgot password?"
+    }
+  },
+  "status": {
+    "active": "active",
+    "inactive": "inactive"
+  },
+  "time": {
+    "formats": {
+      "date": "%-d %b %Y",
+      "default": "%a, %d %b %G, %l:%M%p %Z",
+      "short": "%B %d"
+    }
+  },
+  "users": {
+    "actions": {
+      "destroy": "Deactivate",
+      "edit": "Edit",
+      "hide_inactive": "Hide Inactive Users",
+      "invite": "Resend Invitation",
+      "new": "Invite A New User",
+      "reactivate": "Reactivate",
+      "show_inactive": "Show Inactive Users"
+    },
+    "index": {
+      "title": "Users",
+      "unconfirmed": "(unconfirmed)"
+    },
+    "user": {
+      "last_invited": "Last invited on "
+    }
+  },
+  "deny_access": {
+    "index": {
+      "message": "Sorry you do not have permissions for that section."
+    }
+  },
+  "tooltips": {
+    "overview": {
+      "media_type_sentiment": "Automated tonality by media type",
+      "regional_sentiment": "Automated tonality by region",
+      "featured_article": {
+        "heading": "Featured Article",
+        "body": "The top earned media article"
+      },
+      "share_of_voice": "Share of coverage for pre-determined search terms",
+      "earned_media": "Based on volume of coverage from media outlets with highest available circulation figures",
+      "traditional_media": "May contain Print and/or Broadcast",
+      "top_authors": "Highest volume of coverage generated by Author",
+      "top_outlets": "Based on volume of coverage from media outlets with highest available circulation figures"
+    },
+    "filter": {
+      "sentiment": {
+        "heading": "Sentiment",
+        "body": "Lorem ipsum dolor sit amet"
+      },
+      "tags": {
+        "heading": "Tags",
+        "body": "Articles are tagged by blah, blah, blah."
+      },
+      "search_articles": {
+        "body": "Lorem Ipsum dolor sit amet"
+      }
+    }
+  },
+  "languages": {
+    "unknown": {
+      "name": "Unknown"
+    },
+    "ab": {
+      "name": "Abkhaz",
+      "family": "Northwest Caucasian",
+      "alpha3t": "abk"
+    },
+    "aa": {
+      "name": "Afar",
+      "family": "Afro-Asiatic",
+      "alpha3t": "aar"
+    },
+    "af": {
+      "name": "Afrikaans",
+      "family": "Indo-European",
+      "alpha3t": "afr"
+    },
+    "ak": {
+      "name": "Akan",
+      "family": "Niger-Congo",
+      "alpha3t": "aka"
+    },
+    "sq": {
+      "name": "Albanian",
+      "family": "Indo-European",
+      "alpha3t": "sqi"
+    },
+    "am": {
+      "name": "Amharic",
+      "family": "Afro-Asiatic",
+      "alpha3t": "amh"
+    },
+    "ar": {
+      "name": "Arabic",
+      "family": "Afro-Asiatic",
+      "alpha3t": "ara"
+    },
+    "an": {
+      "name": "Aragonese",
+      "family": "Indo-European",
+      "alpha3t": "arg"
+    },
+    "hy": {
+      "name": "Armenian",
+      "family": "Indo-European",
+      "alpha3t": "hye"
+    },
+    "as": {
+      "name": "Assamese",
+      "family": "Indo-European",
+      "alpha3t": "asm"
+    },
+    "av": {
+      "name": "Avaric",
+      "family": "Northeast Caucasian",
+      "alpha3t": "ava"
+    },
+    "ae": {
+      "name": "Avestan",
+      "family": "Indo-European",
+      "alpha3t": "ave"
+    },
+    "ay": {
+      "name": "Aymara",
+      "family": "Aymaran",
+      "alpha3t": "aym"
+    },
+    "az": {
+      "name": "Azerbaijani",
+      "family": "Turkic",
+      "alpha3t": "aze"
+    },
+    "bm": {
+      "name": "Bambara",
+      "family": "Niger-Congo",
+      "alpha3t": "bam"
+    },
+    "ba": {
+      "name": "Bashkir",
+      "family": "Turkic",
+      "alpha3t": "bak"
+    },
+    "eu": {
+      "name": "Baque",
+      "family": "Language Isolate",
+      "alpha3t": "eus",
+      "alpha3b": "baq"
+    },
+    "be": {
+      "name": "Belarusian",
+      "family": "Indo-European",
+      "alpha3t": "bel"
+    },
+    "bn": {
+      "name": "Bengali",
+      "family": "Indo-European",
+      "alpha3t": "ben"
+    },
+    "bh": {
+      "name": "Bihari",
+      "family": "Indo-European",
+      "alpha3t": "bih"
+    },
+    "bi": {
+      "name": "Bislama",
+      "family": "Creole",
+      "alpha3t": "bis"
+    },
+    "bs": {
+      "name": "Bosnian",
+      "family": "Indo-European",
+      "alpha3t": "bos"
+    },
+    "br": {
+      "name": "Breton",
+      "family": "Indo-European",
+      "alpha3t": "bre"
+    },
+    "bg": {
+      "name": "Bulgarian",
+      "family": "Indo-European",
+      "alpha3t": "bul"
+    },
+    "my": {
+      "name": "Burmese",
+      "family": "Sino-Tibetan",
+      "alpha3t": "mya",
+      "alpha3b": "bur"
+    },
+    "ca": {
+      "name": "Catalan",
+      "family": "Indo-European",
+      "alpha3t": "cat"
+    },
+    "ch": {
+      "name": "Chamorro",
+      "family": "Austronesian",
+      "alpha3t": "cha"
+    },
+    "ce": {
+      "name": "Chechen",
+      "family": "Northeast Caucasian",
+      "alpha3t": "che"
+    },
+    "ny": {
+      "name": "Chichewa",
+      "family": "Niger-Congo",
+      "alpha3t": "nya"
+    },
+    "zh": {
+      "name": "Chinese",
+      "family": "Sino-Tibetan",
+      "alpha3t": "zho",
+      "alpha3b": "chi"
+    },
+    "cv": {
+      "name": "Chuvash",
+      "family": "Turkic",
+      "alpha3t": "chv"
+    },
+    "kw": {
+      "name": "Cornish",
+      "family": "Indo-European",
+      "alpha3t": "cor"
+    },
+    "co": {
+      "name": "Corsican",
+      "family": "Indo-European",
+      "alpha3t": "cos"
+    },
+    "cr": {
+      "name": "Cree",
+      "family": "Algonquian",
+      "alpha3t": "cre"
+    },
+    "hr": {
+      "name": "Croatian",
+      "family": "Indo-European",
+      "alpha3t": "hrv"
+    },
+    "cs": {
+      "name": "Czech",
+      "family": "Indo-European",
+      "alpha3t": "ces",
+      "alpha3b": "cze"
+    },
+    "da": {
+      "name": "Danish",
+      "family": "Indo-European",
+      "alpha3t": "dan"
+    },
+    "dv": {
+      "name": "Divehi",
+      "family": "Indo-European",
+      "alpha3t": "div"
+    },
+    "nl": {
+      "name": "Dutch",
+      "family": "Indo-European",
+      "alpha3t": "nld",
+      "alpha3b": "dut"
+    },
+    "dz": {
+      "name": "Dzongkha",
+      "family": "Sino-Tibetan",
+      "alpha3t": "dzo"
+    },
+    "en": {
+      "name": "English",
+      "family": "Indo-European",
+      "alpha3t": "eng"
+    },
+    "eo": {
+      "name": "Esperanto",
+      "family": "Constructed",
+      "alpha3t": "epo"
+    },
+    "et": {
+      "name": "Estonian",
+      "family": "Finno-Ugric",
+      "alpha3t": "est"
+    },
+    "ee": {
+      "name": "Ewe",
+      "family": "Niger-Congo",
+      "alpha3t": "ewe"
+    },
+    "fo": {
+      "name": "Faroese",
+      "family": "Indo-European",
+      "alpha3t": "fao"
+    },
+    "fj": {
+      "name": "Fijian",
+      "family": "Austronesian",
+      "alpha3t": "fij"
+    },
+    "fi": {
+      "name": "Finnish",
+      "family": "Finno-Ugric",
+      "alpha3t": "fin"
+    },
+    "fr": {
+      "name": "French",
+      "family": "Indo-European",
+      "alpha3t": "fra",
+      "alpha3b": "fre"
+    },
+    "ff": {
+      "name": "Fula",
+      "family": "Niger-Congo",
+      "alpha3t": "ful"
+    },
+    "gl": {
+      "name": "Galican",
+      "family": "Indo-European",
+      "alpha3t": "glg"
+    },
+    "ka": {
+      "name": "Georgian",
+      "family": "South Caucasian",
+      "alpha3t": "kat",
+      "alpha3b": "geo"
+    },
+    "de": {
+      "name": "German",
+      "family": "Indo-European",
+      "alpha3t": "deu",
+      "alpha3b": "ger"
+    },
+    "el": {
+      "name": "Greek",
+      "family": "Indo-European",
+      "alpha3t": "ell",
+      "alpha3b": "gre"
+    },
+    "gn": {
+      "name": "Guarani",
+      "family": "Tupi-Guarani",
+      "alpha3t": "grn"
+    },
+    "gu": {
+      "name": "Gujarati",
+      "family": "Indo-European",
+      "alpha3t": "guj"
+    },
+    "ht": {
+      "name": "Haitian",
+      "family": "Creole",
+      "alpha3t": "hat"
+    },
+    "ha": {
+      "name": "Hausa",
+      "family": "Afro-Asiatic",
+      "alpha3t": "hau"
+    },
+    "he": {
+      "name": "Hebrew",
+      "family": "Afro-Asiatic",
+      "alpha3t": "heb"
+    },
+    "hz": {
+      "name": "Herero",
+      "family": "Niger-Congo",
+      "alpha3t": "her"
+    },
+    "hi": {
+      "name": "Hindi",
+      "family": "Indo-European",
+      "alpha3t": "hin"
+    },
+    "ho": {
+      "name": "Hiri Motu",
+      "family": "Austronesian",
+      "alpha3t": "hmo"
+    },
+    "hu": {
+      "name": "Hungarian",
+      "family": "Finno-Ugric",
+      "alpha3t": "hun"
+    },
+    "ia": {
+      "name": "Interlingua",
+      "family": "Constructed",
+      "alpha3t": "ina"
+    },
+    "id": {
+      "name": "Indonesian",
+      "family": "Austronesian",
+      "alpha3t": "ind"
+    },
+    "ie": {
+      "name": "Interlingue",
+      "family": "Constructed",
+      "alpha3t": "ile"
+    },
+    "ga": {
+      "name": "Irish",
+      "family": "Indo-European",
+      "alpha3t": "gle"
+    },
+    "ig": {
+      "name": "Igbo",
+      "family": "Niger-Congo",
+      "alpha3t": "ibo"
+    },
+    "ik": {
+      "name": "Inupiaq",
+      "family": "Eskimo-Aleut",
+      "alpha3t": "ipk"
+    },
+    "io": {
+      "name": "Ido",
+      "family": "Constructed",
+      "alpha3t": "ido"
+    },
+    "is": {
+      "name": "Icelandic",
+      "family": "Indo-European",
+      "alpha3t": "isl",
+      "alpha3b": "ice"
+    },
+    "it": {
+      "name": "Italian",
+      "family": "Indo-European",
+      "alpha3t": "ita"
+    },
+    "iu": {
+      "name": "Inuktitut",
+      "family": "Eskimo-Aleut",
+      "alpha3t": "iku"
+    },
+    "ja": {
+      "name": "Japanese",
+      "family": "Japonic",
+      "alpha3t": "jpn"
+    },
+    "jv": {
+      "name": "Javanese",
+      "family": "Austronesian",
+      "alpha3t": "jav"
+    },
+    "kl": {
+      "name": "Kalaallisut",
+      "family": "Eskimo-Aleut",
+      "alpha3t": "kal"
+    },
+    "kn": {
+      "name": "Kannada",
+      "family": "Dravidian",
+      "alpha3t": "kan"
+    },
+    "kr": {
+      "name": "Kanuri",
+      "family": "Nilo-Saharan",
+      "alpha3t": "kau"
+    },
+    "ks": {
+      "name": "Kashmiri",
+      "family": "Indo-European",
+      "alpha3t": "kas"
+    },
+    "kk": {
+      "name": "Kazakh",
+      "family": "Turkic",
+      "alpha3t": "kaz"
+    },
+    "km": {
+      "name": "Khmer",
+      "family": "Austro-Asiatic",
+      "alpha3t": "khm"
+    },
+    "ki": {
+      "name": "Kikuyu",
+      "family": "Niger-Congo",
+      "alpha3t": "kik"
+    },
+    "rw": {
+      "name": "Kinyarwanda",
+      "family": "Niger-Congo",
+      "alpha3t": "kin"
+    },
+    "ky": {
+      "name": "Kirghiz",
+      "family": "Turkic",
+      "alpha3t": "kir"
+    },
+    "kv": {
+      "name": "Komi",
+      "family": "Finno-Ugric",
+      "alpha3t": "kom"
+    },
+    "kg": {
+      "name": "Kongo",
+      "family": "Niger-Congo",
+      "alpha3t": "kon"
+    },
+    "ko": {
+      "name": "Korean",
+      "family": "Language Isolate",
+      "alpha3t": "kor"
+    },
+    "ku": {
+      "name": "Kurdish",
+      "family": "Indo-European",
+      "alpha3t": "kur"
+    },
+    "kj": {
+      "name": "Kwanyama",
+      "family": "Niger-Congo",
+      "alpha3t": "kua"
+    },
+    "la": {
+      "name": "Latin",
+      "family": "Indo-European",
+      "alpha3t": "lat"
+    },
+    "lb": {
+      "name": "Luxembourgish",
+      "family": "Indo-European",
+      "alpha3t": "ltz"
+    },
+    "lg": {
+      "name": "Luganda",
+      "family": "Niger-Congo",
+      "alpha3t": "lug"
+    },
+    "li": {
+      "name": "Limburgish",
+      "family": "Indo-European",
+      "alpha3t": "lim"
+    },
+    "ln": {
+      "name": "Lingala",
+      "family": "Niger-Congo",
+      "alpha3t": "lin"
+    },
+    "lo": {
+      "name": "Lao",
+      "family": "Tai-Kadai",
+      "alpha3t": "lao"
+    },
+    "lt": {
+      "name": "Lithuanian",
+      "family": "Indo-European",
+      "alpha3t": "lit"
+    },
+    "lu": {
+      "name": "Luba-Katanga",
+      "family": "Niger-Congo",
+      "alpha3t": "lub"
+    },
+    "lv": {
+      "name": "Latvian",
+      "family": "Indo-European",
+      "alpha3t": "lav"
+    },
+    "gv": {
+      "name": "Manx",
+      "family": "Indo-European",
+      "alpha3t": "glv"
+    },
+    "mk": {
+      "name": "Macedonian",
+      "family": "Indo-European",
+      "alpha3t": "mkd",
+      "alpha3b": "mac"
+    },
+    "mg": {
+      "name": "Malagasy",
+      "family": "Austronesian",
+      "alpha3t": "mlg"
+    },
+    "ms": {
+      "name": "Malay",
+      "family": "Austronesian",
+      "alpha3t": "msa",
+      "alpha3b": "may"
+    },
+    "ml": {
+      "name": "Malayalam",
+      "family": "Dravidian",
+      "alpha3t": "mal"
+    },
+    "mt": {
+      "name": "Maltese",
+      "family": "Afro-Asiatic",
+      "alpha3t": "mlt"
+    },
+    "mi": {
+      "name": "Māori",
+      "family": "Austronesian",
+      "alpha3t": "mri",
+      "alpha3b": "mao"
+    },
+    "mr": {
+      "name": "Marathi",
+      "family": "Indo-European",
+      "alpha3t": "mar"
+    },
+    "mh": {
+      "name": "Marshallese",
+      "family": "Austronesian",
+      "alpha3t": "mah"
+    },
+    "mn": {
+      "name": "Mongolian",
+      "family": "Mongolic",
+      "alpha3t": "mon"
+    },
+    "na": {
+      "name": "Nauru",
+      "family": "Austronesian",
+      "alpha3t": "nau"
+    },
+    "nv": {
+      "name": "Navajo",
+      "family": "Dene-Yeniseian",
+      "alpha3t": "nav"
+    },
+    "nb": {
+      "name": "Norwegian Bokmål",
+      "family": "Indo-European",
+      "alpha3t": "nob"
+    },
+    "nd": {
+      "name": "North Ndebele",
+      "family": "Niger-Congo",
+      "alpha3t": "nde"
+    },
+    "ne": {
+      "name": "Nepali",
+      "family": "Indo-European",
+      "alpha3t": "nep"
+    },
+    "ng": {
+      "name": "Ndonga",
+      "family": "Niger-Congo",
+      "alpha3t": "ndo"
+    },
+    "nn": {
+      "name": "Norwegian Nynorsk",
+      "family": "Indo-European",
+      "alpha3t": "nno"
+    },
+    "x_no": {
+      "name": "Norwegian",
+      "family": "Indo-European",
+      "alpha3t": "nor"
+    },
+    "ii": {
+      "name": "Nuosu",
+      "family": "Sino-Tibetan",
+      "alpha3t": "iii"
+    },
+    "nr": {
+      "name": "South Ndebele",
+      "family": "Niger-Congo",
+      "alpha3t": "nbl"
+    },
+    "oc": {
+      "name": "Occitan",
+      "family": "Indo-European",
+      "alpha3t": "oci"
+    },
+    "oj": {
+      "name": "Ojibwe",
+      "family": "Algonquian",
+      "alpha3t": "oji"
+    },
+    "cu": {
+      "name": "Old Church Slavonic",
+      "family": "Indo-European",
+      "alpha3t": "chu"
+    },
+    "om": {
+      "name": "Oromo",
+      "family": "Afro-Asiatic",
+      "alpha3t": "orm"
+    },
+    "or": {
+      "name": "Oriya",
+      "family": "Indo-European",
+      "alpha3t": "ori"
+    },
+    "os": {
+      "name": "Ossetian",
+      "family": "Indo-European",
+      "alpha3t": "oss"
+    },
+    "pa": {
+      "name": "Panjabi",
+      "family": "Indo-European",
+      "alpha3t": "pan"
+    },
+    "pi": {
+      "name": "Pāli",
+      "family": "Indo-European",
+      "alpha3t": "pli"
+    },
+    "fa": {
+      "name": "Persian",
+      "family": "Indo-European",
+      "alpha3t": "fas",
+      "alpha3b": "per"
+    },
+    "pl": {
+      "name": "Polish",
+      "family": "Indo-European",
+      "alpha3t": "pol"
+    },
+    "ps": {
+      "name": "Pashto",
+      "family": "Indo-European",
+      "alpha3t": "pus"
+    },
+    "pt": {
+      "name": "Portuguese",
+      "family": "Indo-European",
+      "alpha3t": "por"
+    },
+    "qu": {
+      "name": "Quechua",
+      "family": "Quechuan",
+      "alpha3t": "que"
+    },
+    "rm": {
+      "name": "Romansh",
+      "family": "Indo-European",
+      "alpha3t": "roh"
+    },
+    "rn": {
+      "name": "Kirundi",
+      "family": "Niger-Congo",
+      "alpha3t": "run"
+    },
+    "ro": {
+      "name": "Romanian",
+      "family": "Indo-European",
+      "alpha3t": "ron",
+      "alpha3b": "rum"
+    },
+    "ru": {
+      "name": "Russian",
+      "family": "Indo-European",
+      "alpha3t": "rus"
+    },
+    "sa": {
+      "name": "Sanskrit",
+      "family": "Indo-European",
+      "alpha3t": "san"
+    },
+    "sc": {
+      "name": "Sardinian",
+      "family": "Indo-European",
+      "alpha3t": "srd"
+    },
+    "sd": {
+      "name": "Sindhi",
+      "family": "Indo-European",
+      "alpha3t": "snd"
+    },
+    "se": {
+      "name": "Northern Sami",
+      "family": "Finno-Ugric",
+      "alpha3t": "sme"
+    },
+    "sm": {
+      "name": "Samoan",
+      "family": "Austronesian",
+      "alpha3t": "smo"
+    },
+    "sg": {
+      "name": "Sango",
+      "family": "Creole",
+      "alpha3t": "sag"
+    },
+    "sr": {
+      "name": "Serbian",
+      "family": "Indo-European",
+      "alpha3t": "srp"
+    },
+    "gd": {
+      "name": "Scottish Gaelic",
+      "family": "Indo-European",
+      "alpha3t": "gla"
+    },
+    "sn": {
+      "name": "Shona",
+      "family": "Niger-Congo",
+      "alpha3t": "sna"
+    },
+    "si": {
+      "name": "Sinhala",
+      "family": "Indo-European",
+      "alpha3t": "sin"
+    },
+    "sk": {
+      "name": "Slovak",
+      "family": "Indo-European",
+      "alpha3t": "slk",
+      "alpha3b": "slo"
+    },
+    "sl": {
+      "name": "Slovene",
+      "family": "Indo-European",
+      "alpha3t": "slv"
+    },
+    "so": {
+      "name": "Somali",
+      "family": "Afro-Asiatic",
+      "alpha3t": "som"
+    },
+    "st": {
+      "name": "Southern Sotho",
+      "family": "Niger-Congo",
+      "alpha3t": "sot"
+    },
+    "es": {
+      "name": "Spanish",
+      "family": "Indo-European",
+      "alpha3t": "spa"
+    },
+    "su": {
+      "name": "Sundanese",
+      "family": "Indo-European",
+      "alpha3t": "sun"
+    },
+    "sw": {
+      "name": "Swahili",
+      "family": "Niger-Congo",
+      "alpha3t": "swa"
+    },
+    "ss": {
+      "name": "Swati",
+      "family": "Niger-Congo",
+      "alpha3t": "ssw"
+    },
+    "sv": {
+      "name": "Swedish",
+      "family": "Indo-European",
+      "alpha3t": "swe"
+    },
+    "ta": {
+      "name": "Tamil",
+      "family": "Dravidian",
+      "alpha3t": "tam"
+    },
+    "te": {
+      "name": "Telugu",
+      "family": "Dravidian",
+      "alpha3t": "tel"
+    },
+    "tg": {
+      "name": "Tajik",
+      "family": "Indo-European",
+      "alpha3t": "tgk"
+    },
+    "th": {
+      "name": "Thai",
+      "family": "Tai-Kadai",
+      "alpha3t": "tha"
+    },
+    "ti": {
+      "name": "Tigrinya",
+      "family": "Afro-Asiatic",
+      "alpha3t": "tir"
+    },
+    "bo": {
+      "name": "Tibetan Standard",
+      "family": "Sino-Tibetan",
+      "alpha3t": "bod",
+      "alpha3b": "tib"
+    },
+    "tk": {
+      "name": "Turkmen",
+      "family": "Turkic",
+      "alpha3t": "tuk"
+    },
+    "tl": {
+      "name": "Tagalog",
+      "family": "Austronesian",
+      "alpha3t": "tgl"
+    },
+    "tn": {
+      "name": "Tswana",
+      "family": "Niger-Congo",
+      "alpha3t": "tsn"
+    },
+    "to": {
+      "name": "Tonga",
+      "family": "Austronesian",
+      "alpha3t": "ton"
+    },
+    "tr": {
+      "name": "Turkish",
+      "family": "Turkic",
+      "alpha3t": "tur"
+    },
+    "ts": {
+      "name": "Tsonga",
+      "family": "Niger-Congo",
+      "alpha3t": "tso"
+    },
+    "tt": {
+      "name": "Tatar",
+      "family": "Turkic",
+      "alpha3t": "tat"
+    },
+    "tw": {
+      "name": "Twi",
+      "family": "Niger-Congo",
+      "alpha3t": "twi"
+    },
+    "ty": {
+      "name": "Tahitian",
+      "family": "Austronesian",
+      "alpha3t": "tah"
+    },
+    "uh": {
+      "name": "Uighur",
+      "family": "Turkic",
+      "alpha3t": "ukr"
+    },
+    "ur": {
+      "name": "Urdu",
+      "family": "Indo-European",
+      "alpha3t": "urd"
+    },
+    "uz": {
+      "name": "Uzbek",
+      "family": "Indo-European",
+      "alpha3t": "uzb"
+    },
+    "ve": {
+      "name": "Venda",
+      "family": "Niger-Congo",
+      "alpha3t": "ven"
+    },
+    "vi": {
+      "name": "Vietnamese",
+      "family": "Austro-Asiatic",
+      "alpha3t": "vie"
+    },
+    "vo": {
+      "name": "Volapük",
+      "family": "Constructed",
+      "alpha3t": "vol"
+    },
+    "wa": {
+      "name": "Walloon",
+      "family": "Indo-European",
+      "alpha3t": "wln"
+    },
+    "cy": {
+      "name": "Welsh",
+      "family": "Indo-European",
+      "alpha3t": "cym",
+      "alpha3b": "wel"
+    },
+    "wo": {
+      "name": "Wolof",
+      "family": "Indo-European",
+      "alpha3t": "wol"
+    },
+    "fy": {
+      "name": "Western Frisian",
+      "family": "Indo-European",
+      "alpha3t": "fry"
+    },
+    "xh": {
+      "name": "Xhosa",
+      "family": "Niger-Congo",
+      "alpha3t": "xho"
+    },
+    "yi": {
+      "name": "Yiddish",
+      "family": "Indo-European",
+      "alpha3t": "yid"
+    },
+    "yo": {
+      "name": "Yoruba",
+      "family": "Niger-Congo",
+      "alpha3t": "yor"
+    },
+    "za": {
+      "name": "Zhuang",
+      "family": "Tai-Kadai",
+      "alpha3t": "zha"
+    },
+    "zu": {
+      "name": "Zulu",
+      "family": "Niger-Congo",
+      "alpha3t": "zul"
+    }
+  }
+}

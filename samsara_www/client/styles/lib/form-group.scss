@@ -1,0 +1,34 @@
+.form-group {
+
+  &.checkbox-group {
+    @include checkbox;
+    .checkbox {
+      display: inline-block;
+      margin-right: $margin/2;
+    }
+  }
+
+  .form-control {
+
+    label {
+      color: $carma-gray;
+      text-transform: uppercase;
+      font-size: $small-font-size;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      display: block;
+
+      &.inline {
+        display: inline-block;
+        margin-right: $margin/2;
+      }
+    }
+
+    input[type=text], input[type=password], input[type=search], input[type=email], textarea {
+      @include text-field;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,27 @@
+// This value is set in /lib/components/modal
+$react-modal-margin: 20px;
+
+.modal-form {
+  margin: -1 * $react-modal-margin;
+  width: 440px;
+
+
+  .header {
+    border-bottom: $border-thin-light;
+    padding: $margin/2 $react-modal-margin;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .body {
+    padding: $margin $react-modal-margin;
+  }
+
+  .footer {
+    border-top: $border-thin-light;
+    padding: $margin/2 $react-modal-margin;
+  }
+
+}

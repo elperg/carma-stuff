@@ -1,0 +1,8 @@
+{
+  "collections" : [
+                    { "id": 1, "name": "Collection A" },
+                    { "id": 2, "name": "Collection B" },
+                    { "id": 3, "name": "Collection C" },
+                    { "id": 4, "name": "Collection D" }
+                  ]
+}

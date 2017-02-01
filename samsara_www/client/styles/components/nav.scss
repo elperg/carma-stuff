@@ -1,0 +1,180 @@
+// Local Variables
+$navbar-height: 4rem;
+
+//
+// @mixin navbar-nav-width($width) {
+//   flex: 0 0 $width;
+//   .dropdown__label {
+//     max-width: ($width - 30px);
+//   }
+// }
+
+
+.navbar {
+  background: $carma-very-black;
+  height: $navbar-height;
+  line-height: $navbar-height;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $margin;
+
+
+  .organization-nav {
+    display: flex;
+    flex: 1;
+  }
+
+  .project-nav {
+    flex: 1;
+  }
+
+  .user-nav {
+    flex: 1;
+    .dropdown {
+      float: right;
+      .menu {
+        right: 0;
+      }
+    }
+  }
+
+  a {
+    color: $carma-light-gray;
+    display: inline-block;
+    position: relative;
+    height: $navbar-height;
+    &:hover, &.active {
+      color: $carma-white;
+    }
+  }
+
+  .logo {
+    position: relative;
+    width: 30px;
+    margin-right: $margin;
+
+    a {
+      display: block;
+      height: 30px;
+    }
+    .carma-logo {
+      height: 30px;
+      width: 30px;
+      fill: $carma-orange;
+    }
+  }
+
+
+  ul.project-nav, ul.project-nav > li {
+    display: inline-block;
+    padding: 0 $margin/2;
+    margin: 0;
+  }
+
+  .dropdown {
+
+    .toggle {
+      color: $carma-light-gray;
+
+      &::after {
+        border-color: $carma-light-gray transparent transparent;
+      }
+
+      &:hover, &.active {
+        color: $carma-white;
+        &::after {
+          border-color: $carma-white transparent transparent;
+        }
+      }
+    }
+
+    .menu {
+      background: $carma-very-black;
+      top: 3rem;
+
+      li {
+        padding: 0;
+      }
+
+      .heading {
+        color: $carma-light-gray;
+        border-color: $carma-gray;
+        padding: 0.75rem 1rem;
+      }
+
+      a {
+        height: auto;
+        display: block;
+        padding: 0.75rem 1rem;
+
+        &:hover {
+          background: $carma-very-black;
+          color: $carma-white;
+        }
+      }
+    }
+
+  }
+
+
+  // Mobile-Only Style for Burger
+  .burger {
+
+    @include media($medium-screen) {
+      display: none;
+    }
+
+    cursor: pointer;
+    padding: 15px 20px 0 0;
+    position: relative;
+
+    .burger-line,
+    .burger-line:before,
+    .burger-line:after {
+      @include position(absolute, 6px null null 0);
+      width: 20px;
+      height: 3px;
+      background: $carma-gray;
+      content: "";
+      display: block;
+    }
+
+    .burger-line {
+      transition: all 0.2s ease-in-out;
+
+      &:before,
+      &:after {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:before {
+        top: -6px;
+      }
+
+      &:after {
+        bottom: -6px;
+      }
+    }
+
+    &--active > .burger-line {
+      background-color: transparent;
+
+      &:before,
+      &:after {
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Style overrides for react-select components
+
+.has-value.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  // color: #007eff;
+  color: $carma-black;
+  font-size: $small-font-size;
+}
+
+.Select--multi .Select-value {
+//   background-color: #ebf5ff;
+//   /* Fallback color for IE 8 */
+//   background-color: rgba(0, 126, 255, 0.08);
+//   border: 1px solid #c2e0ff;
+//   /* Fallback color for IE 8 */
+//   border: 1px solid rgba(0, 126, 255, 0.24);
+//   color: #007eff;
+  background-color: $carma-offwhite;
+  color: $carma-black;
+  border-color: $carma-light-gray;
+  font-size: $small-font-size;
+}
+
+.Select--multi a.Select-value-label {
+  // color: #007eff;
+  color: $carma-black;
+  font-size: $small-font-size;
+}
+
+.Select--multi .Select-value-icon {
+  border-right: 1px solid $carma-light-gray;
+//   border-right: 1px solid #c2e0ff;
+//   /* Fallback color for IE 8 */
+//   border-right: 1px solid rgba(0, 126, 255, 0.24);
+}
+
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: $carma-faint-gray;
+  color: $carma-gray;
+//   background-color: #d8eafd;
+//   /* Fallback color for IE 8 */
+//   background-color: rgba(0, 113, 230, 0.08);
+//   color: #0071e6;
+}
+
+.Select--multi .Select-value-icon:active {
+  background-color: $carma-gray;
+//   background-color: #c2e0ff;
+//   /* Fallback color for IE 8 */
+//   background-color: rgba(0, 126, 255, 0.24);
+}
+
+.is-focused:not(.is-open) > .Select-control {
+  border-color: $carma-gray;
+  box-shadow: none;
+//   border-color: #007eff;
+//   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
+}

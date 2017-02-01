@@ -1,0 +1,9 @@
+.video-player, .audio-player {
+  width: 100%;
+
+  // this is the root element of the video player
+  & > div {
+    margin: 0 auto;
+    width: 100% !important; // need to override inline styles applied by react-player
+  }
+}

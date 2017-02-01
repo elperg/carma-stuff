@@ -1,0 +1,23 @@
+.filters {
+  background: $carma-offwhite;
+  padding: $margin;
+
+  .search-query {
+    position: relative;
+
+    .search-field {
+      @include text-field;
+      padding-left: $margin * 1.5;
+    }
+
+    .icon {
+      position: absolute;
+      left: $margin/2;
+      top: $margin/2;
+
+      svg path {
+        fill: $carma-light-gray;
+      }
+    }
+  }
+}

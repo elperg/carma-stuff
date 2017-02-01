@@ -1,0 +1,89 @@
+{
+  "pagination": {
+                  "totalCount"      : 3232
+                },
+
+  "data":       {
+    "articles"  : [
+                    {
+                      "id"            : 1,
+                      "outlet_name"   : "Al Watan",
+                      "media_subtype" : "Newspaper",
+                      "frequency"     : "Daily",
+                      "region"        : "Bahrain",
+                      "sentiment"     : "neutral",
+                      "impressions"   : 60000,
+                      "ave"           : 3319,
+                      "published_at"  : "2016-03-23T18:25:43.511Z",
+                      "headline"      : "2016 Mitsubishi Attrage",
+                      "summary_snippet" : "Zayani Motors, agent of Mitsubishi in Bahrain, announced launching the al-new Attrage compact city car. The new affordable sedan is marked with its modern and elegant design and is loaded with many comfort features and safety systems.",
+                      "url"           : "/articles/9361cd3b-c832-450c-9ecd-44e28a3e17d8",
+                      "tags"          : {
+                                          "competitors"   : [ "zayani motors", "mitsubishi" ],
+                                          "organizations" : [ "attrage" ]
+                                        },
+                      "image_assets"  : [
+                                          { "id": 1, "url": "/uploads/articles/69573/6545fb4151b56a34a2430a1c.jpg?ixlib=rails-1.0.0&crop=entropy&fit=crop&h=95&w=260&s=90bffe86ed66e809e427db4d9177d3be" },
+                                          { "id": 2, "url": "/uploads/articles/69573/6545fb4151b56a34a2430a1c.jpg?ixlib=rails-1.0.0&crop=entropy&fit=crop&h=95&w=260&s=90bffe86ed66e809e427db4d9177d3be" }
+                                        ]
+                    },
+                    {
+                      "id"            : 2,
+                      "outlet_name"   : "Gulf Daily News",
+                      "media_subtype" : "Newspaper",
+                      "frequency"     : "Daily",
+                      "region"        : "Bahrain",
+                      "sentiment"     : "positive",
+                      "impressions"   : 24000,
+                      "ave"           : 465,
+                      "published_at"  : "2016-03-27:25:43.511Z",
+                      "headline"      : "Traffic police out in force",
+                      "summary_snippet" : "TRAFFIC police will be out in force this week as Bahrain gears up to host its biggest event of the year. Patrols are already escorting vehicles carrying tonnes of racing equipment to the Bahrain International Circuit.",
+                      "url"           :  "/articles/3f6e0509-fcae-438e-bdb4-45d2d26a4e8d",
+                      "tags"          : {
+                                          "organizations": [ "traffic", "police", "bahrain international circuit" ]
+                                        },
+                      "image_assets"  : [
+                                          { "id": 3, "url": "/uploads/articles/69573/6545fb4151b56a34a2430a1c.jpg?ixlib=rails-1.0.0&crop=entropy&fit=crop&h=95&w=260&s=90bffe86ed66e809e427db4d9177d3be" },
+                                          { "id": 4, "url": "/uploads/articles/69573/6545fb4151b56a34a2430a1c.jpg?ixlib=rails-1.0.0&crop=entropy&fit=crop&h=95&w=260&s=90bffe86ed66e809e427db4d9177d3be" }
+                                        ]
+                    },
+                    {
+                      "id"            : 3,
+                      "outlet_name"   : "Business Traveler Middle East",
+                      "media_subtype" : "Magazine",
+                      "frequency"     : "Monthly",
+                      "region"        : "United Arab Emirates",
+                      "sentiment"     : "somewhat_positive",
+                      "impressions"   : 1972,
+                      "ave"           : 39000,
+                      "published_at"  : "2016-03-31T18:25:43.511Z",
+                      "headline"      : "Pieces of the African pie",
+                      "summary_snippet" : "For the next 20 years, Africa will be the single most-important business destination for international companies.",
+                      "url"           : "/articles/da91e151-354e-451b-92db-f293c88f56ea",
+                      "tags"          : {
+                                          "organizations": [ "africa", "business", "international business", "cairo" ]
+                                        },
+                      "image_assets"  : [
+                                          { "id": 5, "url": "/uploads/articles/69573/6545fb4151b56a34a2430a1c.jpg?ixlib=rails-1.0.0&crop=entropy&fit=crop&h=95&w=260&s=90bffe86ed66e809e427db4d9177d3be" }
+                                        ]
+                    },
+                    {
+                      "id"            : 4,
+                      "outlet_name"   : "Zawya",
+                      "media_subtype" : "Website",
+                      "frequency"     : "n/a",
+                      "region"        : "United Arab Emirates",
+                      "sentiment"     : "positive",
+                      "impressions"   : null,
+                      "ave"           : null,
+                      "published_at"  : "2016-03-30:25:43.511Z",
+                      "headline"      : "Dubai’s Town Square ready to welcome first residents in 2017",
+                      "summary_snippet" : "Town Square ready to welcome first residents in 2017 First-of-its-kind trendy development by Nshama unveils first-look of its thoughtfully-designed townhouses.",
+                      "url"           : "/articles/22399349-1308-4673-9719-b1711245f092",
+                      "image_assets"  : []
+                    }
+                  ]
+
+
+}}

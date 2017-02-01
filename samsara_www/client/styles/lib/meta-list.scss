@@ -1,0 +1,26 @@
+.meta-list {
+
+  & > li {
+    color: $carma-gray;
+    display: inline-block;
+    font-size: $small-font-size;
+    font-weight: normal;
+    line-height: $base-line-height;
+
+    &:after {
+      @include pad(0 0.66em);
+      color: tint($carma-gray, 50%);
+      content: "\2022";
+      display: inline-block;
+    }
+
+    &:last-of-type:after {
+      content: none;
+    }
+
+    .tag {
+      color: $carma-gray;
+      vertical-align: bottom;
+    }
+  }
+}

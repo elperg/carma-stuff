@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 6.4.0
+
+## Customize deployment
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ssh ubuntu@$DEPLOYER_BOX "/bin/bash -l -c 'cd carma/playbooks/ubuntu/samsara_www && ansible-playbook -i inventory/staging deploy_www.yml'"

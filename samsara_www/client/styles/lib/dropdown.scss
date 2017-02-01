@@ -1,0 +1,236 @@
+.dropdown {
+  position: relative;
+  overflow: visible;
+
+  .toggle {
+    display: inline-block;
+    cursor: pointer;
+    color: $carma-marine;
+    border: none;
+    background: transparent;
+    white-space: nowrap;
+    position: relative;
+    padding-right: 1.2rem;
+  }
+
+  &:not(.no-caret) .toggle::after {
+    @include position(absolute, calc(50% - 1px) 0 null null);
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: $carma-marine transparent transparent;
+    border-left-style: solid;
+    border-top-style: solid;
+    content: "";
+    display: block;
+  }
+
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 999998;
+    box-shadow: $dropdown-box-shadow;
+    line-height: 1rem;
+    background: $carma-white;
+    min-width: 100%;
+
+    li {
+      color: $carma-gray;
+      white-space: nowrap;
+      display: block;
+      padding: 0.75rem 1rem;
+      color: $carma-marine;
+      height: auto;
+      cursor: pointer;
+
+      &.heading {
+        @include meta-accent;
+        font-size: $small-font-size;
+        border-bottom: $border-thin-light;
+        padding: 0.75rem 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: default;
+      }
+
+      &.break {
+        border-top: $border-thin-light;
+      }
+
+      &:not(.heading):not(.disabled):hover {
+        background: $carma-offwhite;
+      }
+
+      &.disabled {
+        color: $carma-light-gray;
+        cursor: default;
+        background: transparent;
+      }
+
+    }
+
+  }
+
+  &.open {
+    .menu {
+      display: block;
+    }
+  }
+}
+
+
+// .dropdown {
+//   font-weight: normal; // TODO: remove when base font weight adusted
+//   position: relative;
+//
+//   .toggle {
+//     color: $carma-marine;
+//     display: inline-block;
+//     padding-right: 1.2em;
+//     position: relative;
+//     transition: color $short-transition-duration linear;
+//
+// //     .dropdown--dark & {
+// //       color: $dropdown-dark-color;
+// //     }
+//
+//     &::after {
+//       @include position(absolute, calc(50% - 1px) 0 null null);
+//       width: 0;
+//       height: 0;
+//       border: inset 5px;
+//       border-color: $carma-marine transparent transparent;
+//       border-left-style: solid;
+//       border-top-style: solid;
+//       content: "";
+//       display: block;
+//
+// //       .dropdown--dark & {
+// //         border-color: $dropdown-dark-color transparent transparent;
+// //       }
+//     }
+//
+//     &:focus,
+//     &:hover,
+//     .dropdown--open & {
+//       color: $carma-marine;
+//
+// //       .dropdown--dark & {
+// //         color: $dropdown-dark-active-color;
+// //       }
+//
+//       &::after {
+//         border-top-color: $carma-faint-gray;
+//
+// //         .dropdown--dark & {
+// //           border-top-color: $dropdown-dark-active-color;
+// //         }
+//       }
+//     }
+//   }
+//
+//   &__label {
+//     display: inline-block;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//   }
+//
+//   > .menu {
+//     @include position(absolute, 100% null null 0);
+//     background-color: $carma-white;
+//     box-shadow:$dropdown-box-shadow;
+//     display: none;
+//     min-width: 100%;
+//     text-align: left;
+//     z-index: 1;
+//   }
+//
+// //   &--dark > .menu {
+// //     background-color: $dropdown-dark-background;
+// //   }
+//
+//   &--open > .menu {
+//     display: block;
+//   }
+// }
+//
+//
+//
+// .menu {
+//
+//   &__item {
+//     display: block;
+//     min-width: 10em;
+//
+//     &--heading {
+//       @include meta-accent;
+//       border-top: $border-thin;
+//       line-height: 2rem;
+//       overflow: hidden;
+//       padding: 0.85rem 1.7rem 0;
+//       text-overflow: ellipsis;
+//       white-space: nowrap;
+//
+//       &:first-of-type {
+//         border-top: none;
+//       }
+//
+//       .dropdown--dark & {
+//         border-top: none;
+//         color: $carma-black;
+//         line-height: $base-line-height;
+//         padding: $margin/2 $margin/2 0;
+//       }
+//
+//       + &--new {
+//         border-top: none;
+//       }
+//     }
+//
+//     &--divider,
+//     &--new {
+//       border-top: $base-border;
+//     }
+//
+//     &.disabled {
+//       display: none;
+//     }
+//   }
+//
+//   &__link {
+//     background-color: transparent;
+//     border-radius: 0;
+//     color: $carma-marine;
+//     display: block;
+//     font-weight: normal;
+//     line-height: $base-line-height;
+//     padding: $margin/2 $margin;
+//     text-align: left;
+//     width: 100%;
+//
+//     .dropdown--dark & {
+//       color: $carma-light-gray;
+//     }
+//
+//     &:focus,
+//     &:hover {
+//       background-color: $carma-very-black;
+//       color: $carma-white;
+//
+//       .dropdown--dark & {
+//         background-color: $carma-very-black;
+//         color: $carma-white;
+//       }
+//     }
+//
+//     svg {
+//       @include size(20px);
+//       fill: $carma-marine;
+//       margin: 0;
+//     }
+//   }
+// }

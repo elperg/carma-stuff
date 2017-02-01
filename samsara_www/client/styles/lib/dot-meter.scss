@@ -1,0 +1,48 @@
+.dot-meter {
+  @include clearfix;
+  margin-bottom: $margin;
+
+  .label {
+    @include meta-accent;
+    font-size: $base-font-size;
+    float: left;
+  }
+
+  .value {
+    float: right;
+  }
+
+  .bar {
+    height: 4px;
+    background-color: $carma-faint-gray;
+    clear: both;
+    margin: 5px 0 3px;
+    position: relative;
+  }
+
+  .track {
+    @include position(absolute, 0 12px 0 0);
+  }
+
+  .point {
+    @include position(absolute, -4px null);
+    @include size(12px);
+    background-color: $carma-orange;
+    border: 2px solid $carma-white;
+    border-radius: 6px;
+  }
+
+  .min,
+  .max {
+    color: $carma-gray;
+    font-size: $small-font-size;
+  }
+
+  .min {
+    float: left;
+  }
+
+  .max {
+    float: right;
+  }
+}

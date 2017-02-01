@@ -1,0 +1,339 @@
+* {
+  outline: none;
+  @include box-sizing(border-box);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: $base-font-size;
+  height:100%;
+}
+
+body {
+  color: $carma-gray;
+  font-family: $sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  line-height: $base-line-height;
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
+footer {
+  border-top: $border-thin-light;
+  text-align: center;
+  font-size: $small-font-size;
+  padding: $margin;
+  p {
+    margin: 0;
+  }
+}
+
+
+@include ie-10-plus {
+  body {
+    font-feature-settings: normal;
+  }
+}
+
+
+
+
+
+//========================
+//
+//    HEADINGS
+//
+//========================
+
+h1, h2, h3, h4, h5 {
+  font-family: $sans-serif;
+  line-height: $heading-line-height;
+  margin: 0 0 $margin;
+}
+
+h1, h2, h3 { font-weight: 300; }
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+
+h4 {
+  font-size: $h4-font-size;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: $h5-font-size;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: $h6-font-size;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
+
+
+
+
+//========================
+//
+//    TABLES
+//
+//========================
+
+@include ie-10-plus {
+  table {
+    font-feature-settings: normal;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: $margin*2 0 $margin;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table {
+  font-size: 0.93em;
+
+  @include media($medium-screen-down) {
+    border-top: $border-thick;
+  }
+
+  thead {
+    background-color: $carma-offwhite;
+    border-top: $border-thin;
+
+    @include media($medium-screen-down) {
+      display: none;
+    }
+  }
+
+  tr {
+    @include media($medium-screen-down) {
+      border-bottom: $border-thin;
+      display: block;
+      padding: $margin 0;
+    }
+
+    &:nth-child(even) {
+      background-color: tint($carma-offwhite, 75%);
+    }
+  }
+
+
+  th {
+    border-bottom: $border-thin;
+    color: $carma-gray;
+    font-size: $small-font-size;
+    overflow-x: hidden;
+    padding: $margin/2 $margin;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  td {
+    border-bottom: $border-thin;
+    padding: $margin;
+
+    @include media($medium-screen-down) {
+      border-bottom: none;
+      display: block;
+      padding: $margin/2 $margin;
+      text-align: right;
+    }
+
+    &::before {
+      @include media($medium-screen-down) {
+        color: $carma-gray;
+        content: attr(data-label);
+        float: left;
+        font-size: $small-font-size;
+      }
+    }
+  }
+
+  tr, td, th { vertical-align: middle;  }
+}
+
+
+
+
+
+
+//========================
+//
+//    BLOCKS, INLINES
+//
+//========================
+
+a {
+  cursor: pointer;
+  color: $carma-marine;
+  fill: currentColor;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $carma-orange;
+    fill: $carma-orange;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+p {
+  margin: 0 0 $margin;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $margin;
+    padding-left: $margin;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $margin;
+    padding-left: $margin;
+  }
+}
+
+dl {
+  margin-bottom: $margin;
+
+  dt {
+    font-weight: bold;
+    margin-top: $margin;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+
+hr {
+  border-bottom: $border-thin;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $margin 0;
+}
+
+mark {
+  background-color: $carma-merlot;
+}
+
+img, picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+svg {
+  line-height: 0;
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+//========================
+//
+//    RTL SUPPORT
+//
+//========================
+
+.arabic, .hebrew, .urdu, .rtl-text {
+  direction: rtl;
+  text-align: start;
+}
+
+
+
+//========================
+//
+//    UTILS
+//
+//========================
+.hidden {
+  display: none !important;
+}
+
+
+//========================
+//
+//    FORM GROUP
+//
+//========================
+.form-group {
+  margin-bottom: $margin;
+}
+
+
+
+//========================
+//
+//    BUTTONS
+//
+//========================
+
+.btn {
+  @include appearance(none);
+  background: $carma-white;
+  color: $carma-marine;
+  border: 1px solid $carma-marine;
+  border-radius: 3px;
+  padding: $margin/4 $margin/2;
+  font-size: $base-font-size * 1.1;
+
+  &:hover {
+    background: darken($carma-white, 10%);
+  }
+
+  &.btn-primary {
+    background: $carma-marine;
+    color: $carma-white;
+    &:hover {
+      background: darken($carma-marine, 10%);
+    }
+  }
+
+  &.btn-danger {
+    background: $carma-danger;
+    border-color: $carma-danger;
+    color: $carma-white;
+    &:hover {
+      background: darken($carma-danger, 10%);
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+@mixin ie-10-plus {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin meta-accent {
+  color: $carma-gray;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: $base-line-height * 1rem;
+  text-transform: uppercase;
+}
+
+@mixin text-field {
+  @include appearance(none);
+  background: $carma-white;
+  border: 1px solid $carma-light-gray;
+  width: 100%;
+  padding: $margin/2;
+  font-size: $base-font-size;
+
+  &:focus {
+    border-color: $carma-gray;
+  }
+}
+
+.meta-accent {
+  @include meta-accent;
+  line-height: $base-line-height;
+  margin-right: 0.15em;
+
+  &-alt {
+    display: block;
+    font-weight: 300;
+  }
+}
+
+
+@mixin checkbox {
+  .checkbox {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    @include size(15px);
+    border: $border-thin;
+  }
+
+  &.selected {
+    .checkbox {
+      background-color: $carma-light-gray;
+      border-color: $carma-light-gray;
+
+      &::after {
+        @include position(absolute, 0 null null 2px);
+        color: $carma-white;
+        content: "✓";
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+  }
+}
